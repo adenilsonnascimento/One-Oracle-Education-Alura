@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio: hora da prática</title>
+</head>
+
+<body>
+
+    <h1>Desafio: hora da prática</h1>
+    <p>Saber como usar funções é um dos conceitos fundamentais da programação e do desenvolvimento de software. As
+        funções desempenham um papel crucial na organização, modularização e reutilização de código. <br>
+
+        Pensando nisso, criamos uma lista de atividades (não obrigatórias) focada em prática para melhorar ainda mais
+        sua experiência de aprendizagem.</p> <br> <br>
+    <hr> <br> <br>
+
+    <h2>Desafios</h2>
+
+    <p>
+        Crie uma função que calcule o índice de massa corporal (IMC) de uma pessoa, a partir de sua altura, em metros, e
+        peso, em quilogramas, que serão recebidos como parâmetro. <br>
+
+        Crie uma função que calcule o valor do fatorial de um número passado como parâmetro. <br>
+
+        Crie uma função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais.
+        Para isso, considere a cotação do dólar igual a R$4,80. <br>
+
+        Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que
+        serão dadas como parâmetro. <br>
+
+        Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será
+        fornecido como parâmetro. Considere Pi = 3,14. <br>
+
+        Crie uma função que mostre na tela a tabuada de um número dado como parâmetro. <br>
+    </p>
+
+
+    <script>
+        function calcularIMC(altura, peso) {
+            let imc = peso / (altura * altura);
+            console.log(`O IMC dessa pessoa é ${imc.toFixed(2)}`);
+        }
+        calcularIMC(1.80, 80);
+
+        function calcularFatorial(numero) {
+            let fatorial = 1;
+            for (let i = 1; i <= numero; i++) {
+                fatorial *= i;
+            }
+            console.log(`O fatorial de ${numero} é ${fatorial}`);
+        }
+        calcularFatorial(5);
+
+        function converterDolarParaReal(valorEmDolar) {
+            const cotacao = 4.80;
+            let valorEmReal = valorEmDolar * cotacao;
+            console.log(`${valorEmDolar} dólares equivalem a R$${valorEmReal.toFixed(2)} reais`);
+        }
+        converterDolarParaReal(5);
+
+        function calcularSalaRetangular(altura, largura) {
+            let area = altura * largura;
+            let perimetro = 2 * (altura + largura);
+            console.log(`A área da sala retangular é ${area} e o perímetro é ${perimetro}`);
+        }
+        calcularSalaRetangular(10, 20);
+
+        function calcularSalaCircular(raio) {
+            const pi = 3.14;
+            let area = pi * (raio * raio);
+            let perimetro = 2 * pi * raio;
+            console.log(`A área da sala circular é ${area} e o perímetro é ${perimetro}`);
+        }
+        calcularSalaCircular(5);
+
+        function mostrarTabuada(numero) {
+            for (let i = 1; i <= 10; i++) {
+                console.log(`${numero} x ${i} = ${numero * i}`);
+            }
+        }
+        mostrarTabuada(5);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio hora da pratica</title>
+</head>
+
+<body>
+    <h1>Desafio hora da pratica</h1> <br>
+    <p>Saber como usar funções é um dos conceitos fundamentais da programação e do desenvolvimento de software. As
+        funções desempenham um papel crucial na organização, modularização e reutilização de código. <br>
+
+        Pensando nisso, criamos uma lista de atividades (não obrigatórias) focada em prática para melhorar ainda mais
+        sua experiência de aprendizagem. <br>
+        <hr><br><br>
+    </p>
+
+    <h2>Desafios</h2> <br> <br>
+
+    <p>Criar uma função que exibe "Olá, mundo!" no console. <br>
+
+        Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console. <br>
+
+        Criar uma função que recebe um número como parâmetro e retorna o dobro desse número. <br>
+
+        Criar uma função que recebe três números como parâmetros e retorna a média deles. <br>
+
+        Criar uma função que recebe dois números como parâmetros e retorna o maior deles. <br>
+
+        Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele
+        mesmo</p>
+
+
+    <script>
+        function olamundo() {
+            console.log("Olá, mundo!");
+        }
+        olamundo();
+
+        function olaNome(nome) {
+            console.log(`Olá, ${nome}!`);
+        }
+        olaNome("Lucas");
+
+        function dobro(num) {
+            return num * 2;
+        }
+        console.log(dobro(5));
+
+        function media(num1, num2, num3) {
+            return (num1 + num2 + num3) / 3;
+        }
+        console.log(media(1, 2, 3));
+
+        function maior(num1, num2) {
+            if (num1 > num2) {
+                return num1;
+            } else {
+                return num2;
+            }
+        }
+        console.log(maior(5, 10));
+
+        function quadrado(num) {
+            return num * num;
+        }
+
+        console.log(quadrado(5));
+
+    </script>
+</body>
+
+</html>
