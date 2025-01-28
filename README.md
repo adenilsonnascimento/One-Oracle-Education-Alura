@@ -16,7 +16,6 @@ O **Oracle Next Education (ONE)** é um programa educacional gratuito e 100% onl
 - **Ensino médio completo ou em andamento** em escola pública (ou particular com bolsa).
 - **Acesso a computador e internet** durante o curso.
 - **Disponibilidade de pelo menos 4 horas diárias** para estudo.
-- **Não possuir experiência prévia em tecnologia** ou desenvolvimento de sistemas.
 
 ## Inscrições e Mais Informações
 
